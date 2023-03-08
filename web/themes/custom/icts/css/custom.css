@@ -1,0 +1,48 @@
+/* Custom ICTS CSS */
+
+/* Navbar Start */
+.navbar {
+        background-color: #b31d0f !important;
+	height: 40px;
+}
+
+.navbar-brand a.site-title {
+        color: #fff !important;
+}
+
+.nav-link {
+        color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	font-family: serif;
+}
+
+.logos {
+        padding: 10px;
+}
+
+.logo-tri {
+        background-image: url("/alpha/web/sites/default/files/theme/icts-logo-triangles.png");
+        background-repeat: repeat-x;
+}
+
+.nav-link:hover {
+	color: #fff;
+	background-color: #a10606;
+}
+
+.group-left {
+	padding-right: 10px;
+}
+
+.group-middle {
+        padding: 10px;
+}
+
+.group-right {
+        padding-left: 10px;
+}
+
+
+
