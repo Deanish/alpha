@@ -44,5 +44,21 @@
         padding-left: 10px;
 }
 
+footer {
+	background-color: #232323;
+	padding: 2rem 0 0 0;
+}
+
+.region-footer {
+	border-top: solid 1px #BDBDBD;
+}
+
+.footer-bottom {
+	color: #BDBDBD;
+	font-style: italic;
+	font-weight: 400;
+	text-align: center;
+	padding-top: 10px;
+}
 
 

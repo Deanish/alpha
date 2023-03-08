@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c6694042f2ebec6785dc9b82c9d818d",
+    "content-hash": "d6ec5c9ccabfd4878cf9545d7c51836b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1123,6 +1123,50 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/ctools",
                 "issues": "https://www.drupal.org/project/issues/ctools"
+            }
+        },
+        {
+            "name": "drupal/current_year",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/current_year.git",
+                "reference": "1.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/current_year-1.0.3.zip",
+                "reference": "1.0.3",
+                "shasum": "053d7c2e5a4b9e943ec5df1f68815c32f8c7cbd7"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.3",
+                    "datestamp": "1671465410",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "JamesOakley",
+                    "homepage": "https://www.drupal.org/user/349037"
+                }
+            ],
+            "description": "Makes the current year accessible as an input filter.",
+            "homepage": "https://www.drupal.org/project/current_year",
+            "support": {
+                "source": "https://git.drupalcode.org/project/current_year"
             }
         },
         {
