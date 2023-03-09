@@ -6,11 +6,7 @@
 	height: 40px;
 }
 
-.navbar-brand a.site-title {
-        color: #fff !important;
-}
-
-.nav-link {
+ul[data-block="nav_main"] .nav-link {
         color: #fff;
 	text-transform: uppercase;
 	font-size: 14px;
