@@ -1,19 +1,40 @@
 /* Custom ICTS CSS */
 
-/* Navbar Start */
-.navbar {
-        background-color: #b31d0f !important;
-	height: 40px;
-}
-
-ul[data-block="nav_main"] .nav-link {
-        color: #fff;
-	text-transform: uppercase;
-	font-size: 14px;
+/* Top bar */
+.top-bar {
+	display: flex;
+	background-color: #232323;
+	color: #fff;
 	font-weight: 600;
-	font-family: serif;
+	font-size: 12px;
+	height: 40px;
+	border-bottom: 1px solid #e7e7e7;
+	align-items: center !important;
+	text-align: justify;
+	text-align-last: end;
 }
 
+.top-bar ul {
+	list-style: none;
+	float: right;
+	display: flex;
+	margin: 0px;
+}
+
+.top-bar ul li {
+	float: left;
+	padding: 0px 17px;
+	border-left: 1px solid #e7e7e7;
+	position: relative;
+	line-height: 38px;
+}
+
+.top-bar ul li a {
+	color: #e7e7e7;
+	text-decoration: none;
+}
+
+/* Logo above Navbar */
 .logos {
         padding: 10px;
 }
@@ -22,6 +43,21 @@ ul[data-block="nav_main"] .nav-link {
         background-image: url("/alpha/web/sites/default/files/theme/icts-logo-triangles.png");
         background-repeat: repeat-x;
 }
+
+/* Navbar */
+.navbar {
+        background-color: #b31d0f !important;
+        height: 40px;
+}
+
+ul[data-block="nav_main"] .nav-link {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: serif;
+}
+
 
 .nav-link:hover {
 	color: #fff;
