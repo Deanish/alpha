@@ -11189,10 +11189,15 @@ td > .form-item {
 }
 
 .dropbutton-widget {
+  background-color: #fff;
   border-radius: 0.375rem;
 }
 .dropbutton-widget .dropbutton .dropbutton-action > * {
   padding: 0.375rem 0.75rem;
+}
+
+.webform-dropbutton .dropbutton-wrapper .dropbutton-widget {
+  background-color: #fff;
 }
 
 .paragraph-type-label,
@@ -11388,6 +11393,7 @@ footer .region-footer {
   }
 }
 a.tabledrag-handle .handle {
+  height: 1.7em;
   display: table-cell;
   padding-right: 1rem !important;
 }

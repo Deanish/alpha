@@ -5,12 +5,12 @@
  * bootstrap5 theme file.
  */
 
-use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Render\Element;
+use Drupal\block\Entity\Block;
 use Drupal\bootstrap5\SettingsManager;
 use Drupal\bootstrap5\SubthemeManager;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
 use Drupal\views\ViewExecutable;
-use Drupal\block\Entity\Block;
 
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
@@ -196,9 +196,18 @@ function bootstrap5_preprocess_image(&$variables) {
 /**
  * Callback to add standard table classes.
  *
- * @see https://getbootstrap.com/docs/5.1/content/tables/
+ * @see https://getbootstrap.com/docs/5.2/content/tables/
  */
 function bootstrap5_add_table_variables(&$variables) {
+  $variables['attributes']['class'][] = 'table';
+}
+
+/**
+ * Callback to add standard table classes.
+ *
+ * @see https://getbootstrap.com/docs/5.2/content/tables/
+ */
+function bootstrap5_add_table_striped_variables(&$variables) {
   $variables['attributes']['class'][] = 'table-striped';
 }
 
@@ -207,6 +216,7 @@ function bootstrap5_add_table_variables(&$variables) {
  */
 function bootstrap5_preprocess_system_modules_details(&$variables) {
   bootstrap5_add_table_variables($variables);
+  bootstrap5_add_table_striped_variables($variables);
 }
 
 /**
@@ -214,12 +224,21 @@ function bootstrap5_preprocess_system_modules_details(&$variables) {
  */
 function bootstrap5_preprocess_system_modules_uninstall(&$variables) {
   bootstrap5_add_table_variables($variables);
+  bootstrap5_add_table_striped_variables($variables);
 }
 
 /**
  * Implements theme_preprocess_views_ui_views_listing_table().
  */
 function bootstrap5_preprocess_views_ui_views_listing_table(&$variables) {
+  bootstrap5_add_table_variables($variables);
+  bootstrap5_add_table_striped_variables($variables);
+}
+
+/**
+ * Implements theme_preprocess_table().
+ */
+function bootstrap5_preprocess_table(&$variables) {
   bootstrap5_add_table_variables($variables);
 }
 
