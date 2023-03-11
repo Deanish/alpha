@@ -64,18 +64,13 @@ ul[data-block="nav_main"] .nav-link {
 	background-color: #a10606;
 }
 
-.group-left {
-	padding-right: 10px;
+/* Display Suite */
+.layout__region--first-above,
+.layout__region--second-above {
+	padding: 0px 5px;
 }
 
-.group-middle {
-        padding: 10px;
-}
-
-.group-right {
-        padding-left: 10px;
-}
-
+/* Footer */
 footer {
 	background-color: #232323;
 	padding: 2rem 0 0 0;
