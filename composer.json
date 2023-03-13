@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.3",
+        "drupal/auto_entitylabel": "^3.0",
         "drupal/bootstrap5": "^3.0",
         "drupal/cer": "^5.0@beta",
         "drupal/conditional_fields": "^4.0@alpha",
