@@ -64,10 +64,66 @@ ul[data-block="nav_main"] .nav-link {
 	background-color: #a10606;
 }
 
+/*Breadcrumb path */
+.breadcrumb-path {
+	font-weight: 600;
+	color: #232323;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+
+.fa-chevron-right {
+	height: 0.8em;
+	padding-left: 10px;
+}
+
+.svg-inline--fa {
+	padding-right: 10px;
+	color: #B31D0F;
+}
+
 /* Display Suite */
 .layout__region--first-above,
 .layout__region--second-above {
 	padding: 0px 5px;
+}
+
+/* Body */
+body {
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+a {
+	color: #B31D0F;
+	text-decoration: none;
+}
+
+.label-upper {
+	text-transform: uppercase;
+	color: #566174;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.border {
+	border-bottom: 2px solid #ebebeb !important;
+	margin-bottom: 20px;
+}
+
+/* Content type */
+
+/* People */
+.people-name {
+	font-weight: 700px;
+	font-size: 22px;
+	color: #B31D0F;
+	font-family: "Cormorant",serif;
+}
+
+.people-area-research {
+	padding-top: 10px;
 }
 
 /* Footer */
