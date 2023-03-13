@@ -100,6 +100,11 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color: #F88826;
+	text-decoration: none;
+}
+
 .label-upper {
 	text-transform: uppercase;
 	color: #566174;

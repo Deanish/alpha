@@ -77,7 +77,7 @@ class __TwigTemplate_5f0c139ab5ed4fe0ba786f0d7046e475 extends Template
 \t\t<div class=\"people-website\"><i class=\"fa-solid fa-earth-asia\"></i><a href=";
         // line 12
         echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["node"] ?? null), "field_people_website", [], "any", false, false, true, 12), "uri", [], "any", false, false, true, 12), 12, $this->source), "html", null, true);
-        echo ">Personal Webpage</a></div>
+        echo " target=\"_blank\">Personal Webpage</a></div>
 \t</div>
 </div>
 <div class=\"border\"></div>
