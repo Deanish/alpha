@@ -1,0 +1,13 @@
+name: Disable Field
+type: module
+description: Allows to disable field of entities on the forms
+package: Fields
+core_version_requirement: ^9.2 || ^10
+dependencies:
+  - drupal:field
+  - drupal:user
+
+# Information added by Drupal.org packaging script on 2022-08-18
+version: '3.0.2'
+project: 'disable_field'
+datestamp: 1660823536
