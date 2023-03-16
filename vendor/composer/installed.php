@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '050e31eaa3bfb5afc26249bee2e6e6582fdff2c4',
+        'reference' => '6b1f143142886dd972d32971e6f39ddf7c7814b0',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -370,6 +370,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/fieldblock' => array(
+            'pretty_version' => '2.2.0',
+            'version' => '2.2.0.0',
+            'reference' => '8.x-2.2',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/fieldblock',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/fontawesome' => array(
             'pretty_version' => '2.25.0',
             'version' => '2.25.0.0',
@@ -418,7 +427,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '050e31eaa3bfb5afc26249bee2e6e6582fdff2c4',
+            'reference' => '6b1f143142886dd972d32971e6f39ddf7c7814b0',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
