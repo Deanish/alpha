@@ -64,11 +64,26 @@ ul[data-block="nav_main"] .nav-link {
 	background-color: #a10606;
 }
 
+/* Sub Menu */
+a.sub-menu,
+a.sub-menu:hover {
+	background-color: #B31D0F;
+	color: #FFFFFF;
+	width: auto;
+	height: 30px;
+	padding: 0px 12px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
 /*Breadcrumb path */
 .breadcrumb-path {
 	font-weight: 600;
 	color: #232323;
 	text-transform: uppercase;
+	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
@@ -121,7 +136,7 @@ a:hover {
 
 /* People */
 .people-name {
-	font-weight: 700px;
+	font-weight: 700px !important;
 	font-size: 22px;
 	color: #B31D0F;
 	font-family: "Cormorant",serif;
