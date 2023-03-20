@@ -12,8 +12,8 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* core/themes/stable9/templates/media-library/feed-icon.html.twig */
-class __TwigTemplate_068699d1b9273698e2e90c1dc8f9912d extends Template
+/* themes/contrib/bootstrap5/templates/user/user.html.twig */
+class __TwigTemplate_c66954c8410f5860428e6b6736a2465b extends Template
 {
     private $source;
     private $macros = [];
@@ -35,23 +35,24 @@ class __TwigTemplate_068699d1b9273698e2e90c1dc8f9912d extends Template
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 14
-        echo "<a href=\"";
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(($context["url"] ?? null), 14, $this->source), "html", null, true);
-        echo "\"";
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["attributes"] ?? null), "addClass", [0 => "feed-icon"], "method", false, false, true, 14), 14, $this->source), "html", null, true);
+        // line 19
+        echo "<article";
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["attributes"] ?? null), "addClass", [0 => "profile"], "method", false, false, true, 19), 19, $this->source), "html", null, true);
         echo ">
   ";
-        // line 15
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->renderVar(t("Subscribe to @title", ["@title" => ($context["title"] ?? null)]));
-        echo "
-</a>
+        // line 20
+        if (($context["content"] ?? null)) {
+            // line 21
+            echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(($context["content"] ?? null), 21, $this->source), "html", null, true);
+        }
+        // line 23
+        echo "</article>
 ";
     }
 
     public function getTemplateName()
     {
-        return "core/themes/stable9/templates/media-library/feed-icon.html.twig";
+        return "themes/contrib/bootstrap5/templates/user/user.html.twig";
     }
 
     public function isTraitable()
@@ -61,24 +62,24 @@ class __TwigTemplate_068699d1b9273698e2e90c1dc8f9912d extends Template
 
     public function getDebugInfo()
     {
-        return array (  46 => 15,  39 => 14,);
+        return array (  49 => 23,  46 => 21,  44 => 20,  39 => 19,);
     }
 
     public function getSourceContext()
     {
-        return new Source("", "core/themes/stable9/templates/media-library/feed-icon.html.twig", "/var/www/html/alpha/web/core/themes/stable9/templates/media-library/feed-icon.html.twig");
+        return new Source("", "themes/contrib/bootstrap5/templates/user/user.html.twig", "/var/www/html/alpha/web/themes/contrib/bootstrap5/templates/user/user.html.twig");
     }
     
     public function checkSecurity()
     {
-        static $tags = array();
-        static $filters = array("escape" => 14, "t" => 15);
+        static $tags = array("if" => 20);
+        static $filters = array("escape" => 19);
         static $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                [],
-                ['escape', 't'],
+                ['if'],
+                ['escape'],
                 []
             );
         } catch (SecurityError $e) {

@@ -12,8 +12,8 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* themes/contrib/bootstrap5/templates/navigation/menu--main.html.twig */
-class __TwigTemplate_c3147145feaa18a180e9f9405f69631d extends Template
+/* themes/custom/icts/templates/navigation/menu--main.html.twig */
+class __TwigTemplate_66743413248427c5760e9f106568e5d8 extends Template
 {
     private $source;
     private $macros = [];
@@ -151,7 +151,7 @@ class __TwigTemplate_c3147145feaa18a180e9f9405f69631d extends Template
             if (((($context["menu_level"] ?? null) == 0) && twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "below", [], "any", false, false, true, 68))) {
                 // line 69
                 echo "      ";
-                echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->extensions['Drupal\Core\Template\TwigExtension']->getLink($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "title", [], "any", false, false, true, 69), 69, $this->source), $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "url", [], "any", false, false, true, 69), 69, $this->source), ["class" => ($context["link_class"] ?? null), "role" => "button", "data-bs-toggle" => "dropdown", "aria-expanded" => "false", "title" => ((t("Expand menu") . " ") . $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "title", [], "any", false, false, true, 69), 69, $this->source))]), "html", null, true);
+                echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->extensions['Drupal\Core\Template\TwigExtension']->getLink($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "title", [], "any", false, false, true, 69), 69, $this->source), $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "url", [], "any", false, false, true, 69), 69, $this->source), ["class" => ($context["link_class"] ?? null), "role" => "button", "data-bs-toggle" => "", "aria-expanded" => "false", "title" => ((t("Expand menu") . " ") . $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "title", [], "any", false, false, true, 69), 69, $this->source))]), "html", null, true);
                 echo "
       ";
                 // line 70
@@ -177,7 +177,7 @@ class __TwigTemplate_c3147145feaa18a180e9f9405f69631d extends Template
 
     public function getTemplateName()
     {
-        return "themes/contrib/bootstrap5/templates/navigation/menu--main.html.twig";
+        return "themes/custom/icts/templates/navigation/menu--main.html.twig";
     }
 
     public function isTraitable()
@@ -192,7 +192,7 @@ class __TwigTemplate_c3147145feaa18a180e9f9405f69631d extends Template
 
     public function getSourceContext()
     {
-        return new Source("", "themes/contrib/bootstrap5/templates/navigation/menu--main.html.twig", "/var/www/html/alpha/web/themes/contrib/bootstrap5/templates/navigation/menu--main.html.twig");
+        return new Source("", "themes/custom/icts/templates/navigation/menu--main.html.twig", "/var/www/html/alpha/web/themes/custom/icts/templates/navigation/menu--main.html.twig");
     }
     
     public function checkSecurity()
