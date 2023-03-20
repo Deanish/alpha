@@ -58,11 +58,15 @@ ul[data-block="nav_main"] .nav-link {
         font-family: serif;
 }
 
-
 .nav-link:hover {
 	color: #fff;
 	background-color: #a10606;
 }
+
+.nav-item.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
 
 /* Sub Menu */
 .sub-menu {
