@@ -65,13 +65,15 @@ ul[data-block="nav_main"] .nav-link {
 }
 
 /* Sub Menu */
-a.sub-menu,
-a.sub-menu:hover {
+.sub-menu {
+	margin-bottom: 20px;
+}
+
+.sub-menu > a,
+.sub-menu > a:hover {
 	background-color: #B31D0F;
 	color: #FFFFFF;
-	width: auto;
-	height: 30px;
-	padding: 0px 12px;
+	padding: 5px 10px;
 	border-bottom-left-radius: 4px;
 	border-bottom-right-radius: 4px;
 	border-top-left-radius: 4px;
@@ -144,6 +146,10 @@ a:hover {
 
 .people-area-research {
 	padding-top: 10px;
+}
+
+.people-website {
+	margin-bottom: 10px;
 }
 
 /* Footer */
