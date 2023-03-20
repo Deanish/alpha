@@ -67,6 +67,10 @@ ul[data-block="nav_main"] .nav-link {
 	display: block;
 }
 
+a.nav-link > .svg-inline--fa {
+        padding: 0px;
+        color: #FFFFFF;
+}
 
 /* Sub Menu */
 .sub-menu {
