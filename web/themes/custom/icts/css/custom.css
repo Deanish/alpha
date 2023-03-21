@@ -59,8 +59,18 @@ ul[data-block="nav_main"] .nav-link {
 }
 
 .nav-link:hover {
-	color: #fff;
+	color: #FFFFFF;
 	background-color: #a10606;
+}
+
+.navbar-nav .nav-link.active {
+	color: #FFFFFF;
+}
+
+.dropdown-menu {
+	background-color: #A10606;
+	border-bottom: 0px;
+	line-height: 34px;
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
