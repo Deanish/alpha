@@ -8,6 +8,7 @@
 use Drupal\Core\Config\Entity\ThirdPartySettingsInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\FieldableEntityInterface;
+use Drupal\Core\Field\FieldConfigInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Utility\Error;
 use Symfony\Component\Yaml\Exception\ParseException;
@@ -110,4 +111,28 @@ function epp_form_alter(&$form, FormStateInterface $form_state, $formId) {
     '#description' => t('Also apply the value on update.'),
     '#default_value' => $fieldConfig->getThirdPartySetting('epp', 'on_update', FALSE),
   ];
+
+  $form['#entity_builders'][] = 'epp_field_config_form_builder';
+}
+
+/**
+ * Removes EPP third party settings if all user-submitted values are empty.
+ *
+ * @param string $entity_type_id
+ *   The entity type identifier.
+ * @param \Drupal\Core\Field\FieldConfigInterface $fieldConfig
+ *   The entity updated with the submitted values.
+ * @param array $form
+ *   The complete form array.
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *   The current state of the form.
+ */
+function epp_field_config_form_builder($entity_type_id, FieldConfigInterface $fieldConfig, array $form, FormStateInterface $form_state) {
+  if (
+    empty($fieldConfig->getThirdPartySetting('epp', 'value'))
+    && empty($fieldConfig->getThirdPartySetting('epp', 'on_update'))
+  ) {
+    $fieldConfig->unsetThirdPartySetting('epp', 'value');
+    $fieldConfig->unsetThirdPartySetting('epp', 'on_update');
+  }
 }

@@ -153,6 +153,7 @@ class CorrespondingReferenceForm extends EntityForm {
   public function exists($id) {
     $entity = $this->entityTypeManager->getStorage('corresponding_reference')
       ->getQuery()
+      ->accessCheck(FALSE)
       ->condition('id', $id)
       ->execute();
     return (bool) $entity;
