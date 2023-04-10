@@ -20,6 +20,7 @@
         "drupal/auto_entitylabel": "^3.0",
         "drupal/base_field_override_ui": "^1.1",
         "drupal/bootstrap5": "^3.0",
+        "drupal/bootstrap_ce": "^2.1",
         "drupal/cer": "^5.0@beta",
         "drupal/conditional_fields": "^4.0@alpha",
         "drupal/core-composer-scaffold": "^10.0",
@@ -37,7 +38,8 @@
         "drupal/pathauto": "^1.11",
         "drupal/token": "^1.11",
         "drupal/twig-twig": "^2.0",
-        "drupal/twig_tweak": "^3.2"
+        "drupal/twig_tweak": "^3.2",
+        "drupal/views_slideshow": "^5.0"
     },
     "conflict": {
         "drupal/drupal": "*"
