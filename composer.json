@@ -40,6 +40,7 @@
         "drupal/token": "^1.11",
         "drupal/twig-twig": "^2.0",
         "drupal/twig_tweak": "^3.2",
+        "drupal/views_base_url": "^2.1@beta",
         "drupal/views_flipped_table": "^2.0",
         "drupal/views_slideshow": "^5.0"
     },
