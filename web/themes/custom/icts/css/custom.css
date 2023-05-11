@@ -202,6 +202,20 @@ a:hover {
 	margin-bottom: 10px;
 }
 
+/* Event */
+.row.event {
+	--bs-gutter-x: 0 !important;
+	margin-bottom: 25px;
+}
+
+.event-title {
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #EBEBEB;
+	padding: 5px 10px;
+	margin-bottom: 20px;
+}
+
 /* Footer */
 footer {
 	background-color: #232323;
